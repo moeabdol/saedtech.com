@@ -38,7 +38,45 @@
     <link rel="stylesheet" href="/styles/main.scss" />
   </head>
   <body>
+    <!-- Heder -->
+    <header class="header">
+      <div class="header__container">
+        <div class="header__logo">
+          <a href="/"><span>Saed</span>Technologies</a>
+        </div>
+
+        <nav class="header__nav">
+          <ul>
+            <li><a href="#vision">Vision</a></li>
+            <li><a href="#mission">Mission</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <button
+          class="header__menu-toggle"
+          id="menuToggle"
+          aria-label="Toggle menu"
+        >
+          <i data-lucide="menu" class="toggle-icon"></i>
+        </button>
+      </div>
+
+      <!-- Mobile Navigation -->
+      <nav class="header__mobile-nav" id="mobileNav">
+        <ul>
+          <li><a href="#vision">Vision</a></li>
+          <li><a href="#mission">Mission</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main -->
     <main>Hello, World!</main>
+
     <script type="module" src="/scripts/main.ts"></script>
   </body>
 </html>

@@ -1,0 +1,42 @@
+// Colors
+$color-primary: #005dbd; // Blue
+$color-primary-dark: #1e40af;
+$color-text-primary: #111827;
+$color-text-secondary: #6b7280;
+$color-bg-light: #f9fafb;
+$color-white: #ffffff;
+$color-border: #e5e7eb;
+
+// Typography
+$font-family-base:
+  inter,
+  geist,
+  geist fallback,
+  -apple-system,
+  blinkmacsystemfont,
+  segoe ui,
+  system-ui;
+$font-size-base: 16px;
+$line-height-base: 1.5;
+
+// Spacing
+$spacing-xs: 0.5rem; // 8px
+$spacing-sm: 1rem; // 16px
+$spacing-md: 1.5rem; // 24px
+$spacing-lg: 2rem; // 32px
+$spacing-xl: 3rem; // 48px
+$spacing-2xl: 4rem; // 64px
+$spacing-3xl: 6rem; // 96px
+
+// Breakpoints
+$breakpoint-sm: 640px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+$breakpoint-xl: 1280px;
+
+// Container
+$container-max-width: 1280px;
+$container-padding: $spacing-md;
+
+// Transitions
+$transition-base: 0.3s ease;
