@@ -12,7 +12,8 @@
     font-size: 3rem;
     font-weight: 600;
     line-height: 1;
-    letter-spacing: -0.1rem;
+    letter-spacing: -0.03em;
+    text-shadow: 0 0 0.5px currentcolor;
     text-align: center;
 
     &__black {
@@ -25,30 +26,29 @@
   }
 
   &__sub-msg {
-    max-width: 40rem;
+    max-width: 600px;
     padding: $container-padding;
     color: $color-text-secondary;
     font-size: 1.5rem;
     font-weight: 400;
     text-align: center;
-    margin-top: $spacing-lg;
+    margin: 0 auto;
+    line-height: 1.6;
   }
 
   &__learn-more-btn {
-    color: $color-text-primary;
+    color: $color-white;
+    background-color: $color-primary;
     text-align: center;
-    border: 1px solid $color-text-primary;
     padding: $spacing-xs;
     width: 8rem;
-    border-radius: 0.7rem;
+    border-radius: 6px;
     margin-top: $spacing-lg;
     transition: color $transition-base;
 
     &:hover {
       color: $color-white;
       background-color: $color-primary;
-      border: 1px solid $color-primary;
-      cursor: pointer;
     }
   }
 
