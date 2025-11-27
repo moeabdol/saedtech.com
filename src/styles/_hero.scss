@@ -1,0 +1,61 @@
+@use 'variables' as *;
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+
+  &__main-msg {
+    max-width: 65rem;
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: -0.1rem;
+    text-align: center;
+
+    &__black {
+      color: $color-text-primary;
+    }
+
+    &__blue {
+      color: $color-primary;
+    }
+  }
+
+  &__sub-msg {
+    max-width: 40rem;
+    padding: $container-padding;
+    color: $color-text-secondary;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+    margin-top: $spacing-lg;
+  }
+
+  &__learn-more-btn {
+    color: $color-text-primary;
+    text-align: center;
+    border: 1px solid $color-text-primary;
+    padding: $spacing-xs;
+    width: 8rem;
+    border-radius: 0.7rem;
+    margin-top: $spacing-lg;
+    transition: color $transition-base;
+
+    &:hover {
+      color: $color-white;
+      background-color: $color-primary;
+      border: 1px solid $color-primary;
+      cursor: pointer;
+    }
+  }
+
+  @media (min-width: $breakpoint-md) {
+    &__main-msg {
+      font-size: 6rem;
+      font-weight: 650;
+    }
+  }
+}

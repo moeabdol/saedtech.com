@@ -15,7 +15,7 @@
 
     @media (min-width: $breakpoint-md) {
       justify-content: flex-start;
-      padding: $spacing-md $spacing-xl;
+      padding: $spacing-md $spacing-3xl;
     }
   }
 
@@ -30,17 +30,18 @@
     a {
       color: inherit;
       transition: opacity $transition-base;
-      font-size: 20px;
-      font-weight: 700;
 
       &:hover {
         opacity: 0.8;
         color: $color-primary;
+
+        span {
+          color: $color-text-primary;
+        }
       }
 
       span {
         color: $color-primary;
-        margin: 0 0.1rem;
       }
     }
   }

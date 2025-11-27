@@ -1,6 +1,7 @@
 @use 'variables' as *;
 @use 'reset';
 @use 'header';
+@use 'hero';
 
 body {
   font-family: $font-family-base;
@@ -10,6 +11,9 @@ body {
   background-color: $color-white;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 // Container utility
@@ -72,4 +76,10 @@ a {
   &:hover {
     color: $color-primary-dark;
   }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
