@@ -7,12 +7,15 @@
 
 	&__container {
 		display: flex;
+		flex-direction: column;
 		justify-content: space-between;
 		align-items: center;
 		flex-grow: 1;
+		gap: 0.3rem;
 		padding: $spacing-md;
 
-		@media (min-width: $breakpoint-md) {
+		@media (min-width: $breakpoint-xl) {
+			flex-direction: row;
 			justify-content: space-between;
 			padding: $spacing-md 20rem;
 		}
@@ -45,5 +48,25 @@
 		color: $color-text-secondary;
 		font-size: 0.84rem;
 		font-weight: 400;
+	}
+
+	&__socials {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		font-size: 0.84rem;
+		font-weight: 400;
+
+		a {
+			color: $color-text-secondary;
+
+			.linkedin {
+				width: 1.2rem;
+			}
+
+			&:hover {
+				color: $color-primary;
+			}
+		}
 	}
 }

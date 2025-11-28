@@ -1,7 +1,8 @@
-import { createIcons, Menu } from 'lucide';
+import { createIcons, Menu, Linkedin } from 'lucide';
 
 createIcons({
-  icons: {
-    Menu,
-  },
+	icons: {
+		Menu,
+		Linkedin,
+	},
 });
