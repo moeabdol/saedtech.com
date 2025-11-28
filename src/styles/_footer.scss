@@ -1,0 +1,49 @@
+@use 'variables' as *;
+
+.footer {
+	display: flex;
+	background-color: $color-white;
+	border-top: 1px solid $color-border;
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-grow: 1;
+		padding: $spacing-md;
+
+		@media (min-width: $breakpoint-md) {
+			justify-content: space-between;
+			padding: $spacing-md 20rem;
+		}
+	}
+
+	&__logo {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 1.25rem;
+		font-weight: 700;
+		color: $color-text-primary;
+
+		a {
+			color: $color-text-primary;
+
+			&:hover {
+				color: $color-text-primary;
+			}
+
+			span {
+				color: $color-primary;
+				margin: 0 0.1rem;
+			}
+		}
+	}
+
+	&__credits {
+		display: flex;
+		color: $color-text-secondary;
+		font-size: 0.84rem;
+		font-weight: 400;
+	}
+}

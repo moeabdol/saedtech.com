@@ -1,61 +1,67 @@
 @use 'variables' as *;
 
 .hero {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex-grow: 1;
+	margin-top: $spacing-3xl;
 
-  &__main-msg {
-    max-width: 65rem;
-    font-size: 3rem;
-    font-weight: 600;
-    line-height: 1;
-    letter-spacing: -0.03em;
-    text-shadow: 0 0 0.5px currentcolor;
-    text-align: center;
+	&__main-msg {
+		max-width: 65rem;
+		font-size: 3rem;
+		font-weight: 600;
+		line-height: 1;
+		letter-spacing: -0.03em;
+		text-shadow: 0 0 0.5px currentcolor;
+		text-align: center;
 
-    &__black {
-      color: $color-text-primary;
-    }
+		&__black {
+			color: $color-text-primary;
+		}
 
-    &__blue {
-      color: $color-primary;
-    }
-  }
+		&__blue {
+			color: $color-primary;
+		}
+	}
 
-  &__sub-msg {
-    max-width: 600px;
-    padding: $container-padding;
-    color: $color-text-secondary;
-    font-size: 1.5rem;
-    font-weight: 400;
-    text-align: center;
-    margin: 0 auto;
-    line-height: 1.6;
-  }
+	&__sub-msg {
+		max-width: 600px;
+		padding: $container-padding;
+		color: $color-text-secondary;
+		font-size: 1.3rem;
+		font-weight: 400;
+		text-align: center;
+		margin: 0 auto;
+		line-height: 1.3;
+	}
 
-  &__learn-more-btn {
-    color: $color-white;
-    background-color: $color-primary;
-    text-align: center;
-    padding: $spacing-xs;
-    width: 8rem;
-    border-radius: 6px;
-    margin-top: $spacing-lg;
-    transition: color $transition-base;
+	&__learn-more-btn {
+		color: $color-white;
+		background-color: $color-primary;
+		text-align: center;
+		padding: $spacing-xs;
+		width: 8rem;
+		border-radius: 6px;
+		margin-top: $spacing-lg;
+		transition: color $transition-base;
 
-    &:hover {
-      color: $color-white;
-      background-color: $color-primary;
-    }
-  }
+		&:hover {
+			color: $color-white;
+			background-color: $color-primary;
+		}
+	}
 
-  @media (min-width: $breakpoint-md) {
-    &__main-msg {
-      font-size: 6rem;
-      font-weight: 650;
-    }
-  }
+	@media (min-width: $breakpoint-md) {
+		&__main-msg {
+			font-size: 6rem;
+			font-weight: 650;
+		}
+
+		&__sub-msg {
+			font-size: 1.5rem;
+			line-height: 1.6;
+		}
+	}
 }

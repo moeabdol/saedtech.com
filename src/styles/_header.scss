@@ -1,133 +1,129 @@
 @use 'variables' as *;
 
 .header {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background-color: $color-white;
-  border-bottom: 1px solid $color-border;
+	position: fixed;
+	top: 0;
+	z-index: 1000;
+	width: 100%;
+	background-color: $color-white;
+	border-bottom: 1px solid $color-border;
 
-  &__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: $spacing-md;
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: $spacing-md;
 
-    @media (min-width: $breakpoint-md) {
-      justify-content: flex-start;
-      padding: $spacing-md $spacing-3xl;
-    }
-  }
+		@media (min-width: $breakpoint-md) {
+			justify-content: flex-start;
+			padding: $spacing-md $spacing-3xl;
+		}
+	}
 
-  &__logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.25rem;
-    font-weight: 700;
-    color: $color-text-primary;
+	&__logo {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 1.25rem;
+		font-weight: 700;
+		color: $color-text-primary;
 
-    a {
-      color: inherit;
-      transition: opacity $transition-base;
+		a {
+			color: $color-text-primary;
 
-      &:hover {
-        opacity: 0.8;
-        color: $color-primary;
+			&:hover {
+				color: $color-text-primary;
+			}
 
-        span {
-          color: $color-text-primary;
-        }
-      }
+			span {
+				color: $color-primary;
+				margin: 0 0.1rem;
+			}
+		}
+	}
 
-      span {
-        color: $color-primary;
-      }
-    }
-  }
+	&__nav {
+		display: none;
 
-  &__nav {
-    display: none;
+		@media (min-width: $breakpoint-md) {
+			display: block;
+		}
 
-    @media (min-width: $breakpoint-md) {
-      display: block;
-    }
+		ul {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: $spacing-md;
+			list-style: none;
+			margin: 0 $spacing-md;
+		}
 
-    ul {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: $spacing-md;
-      list-style: none;
-      margin: 0 $spacing-md;
-    }
+		a {
+			color: $color-text-secondary;
+			font-weight: 500;
+			transition: color $transition-base;
 
-    a {
-      color: $color-text-secondary;
-      font-weight: 500;
-      transition: color $transition-base;
+			&:hover {
+				color: $color-primary;
+			}
+		}
+	}
 
-      &:hover {
-        color: $color-primary;
-      }
-    }
-  }
+	&__menu-toggle {
+		display: block;
+		background: none;
+		border: none;
+		font-size: 1.5rem;
+		cursor: pointer;
+		color: $color-text-primary;
 
-  &__menu-toggle {
-    display: block;
-    background: none;
-    border: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-    color: $color-text-primary;
+		.toggle-icon {
+			width: 1.6rem;
+			height: 1.6rem;
+		}
 
-    .toggle-icon {
-      width: 1.6rem;
-      height: 1.6rem;
-    }
+		@media (min-width: $breakpoint-md) {
+			display: none;
+		}
+	}
 
-    @media (min-width: $breakpoint-md) {
-      display: none;
-    }
-  }
+	// Mobile menu
+	&__mobile-nav {
+		display: none;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		background-color: $color-white;
+		border-bottom: 1px solid $color-border;
 
-  // Mobile menu
-  &__mobile-nav {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background-color: $color-white;
-    border-bottom: 1px solid $color-border;
+		&.is-open {
+			display: block;
+		}
 
-    &.is-open {
-      display: block;
-    }
+		ul {
+			list-style: none;
+			padding: $spacing-md;
+		}
 
-    ul {
-      list-style: none;
-      padding: $spacing-md;
-    }
+		li {
+			padding: $spacing-xs 0;
+		}
 
-    li {
-      padding: $spacing-xs 0;
-    }
+		a {
+			display: block;
+			color: $color-text-secondary;
+			font-weight: 500;
+			padding: $spacing-sm;
+			transition: color $transition-base;
 
-    a {
-      display: block;
-      color: $color-text-secondary;
-      font-weight: 500;
-      padding: $spacing-sm;
-      transition: color $transition-base;
+			&:hover {
+				color: $color-primary;
+			}
+		}
 
-      &:hover {
-        color: $color-primary;
-      }
-    }
-
-    @media (min-width: $breakpoint-md) {
-      display: none !important;
-    }
-  }
+		@media (min-width: $breakpoint-md) {
+			display: none !important;
+		}
+	}
 }

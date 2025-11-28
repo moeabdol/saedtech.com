@@ -1,2 +1,3 @@
 import './icons';
 import './header';
+import './footer';
