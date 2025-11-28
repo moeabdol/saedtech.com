@@ -1,0 +1,36 @@
+@use 'variables' as *;
+
+.vision {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	min-height: 100vh;
+
+	&__text {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+
+		&__title {
+			font-size: 3rem;
+			font-weight: 700;
+			margin-bottom: 1.5rem;
+		}
+
+		&__message {
+			display: flex;
+			flex-direction: column;
+			gap: 0.8rem;
+			font-size: 1.1rem;
+			color: $color-text-secondary;
+		}
+	}
+
+	&__image {
+	}
+
+	@media (min-width: $breakpoint-md) {
+		padding: 10rem;
+	}
+}
