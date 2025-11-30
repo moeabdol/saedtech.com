@@ -1,4 +1,12 @@
-import { createIcons, Menu, Linkedin, Building2, MapPin, Award } from 'lucide';
+import {
+	createIcons,
+	Menu,
+	Linkedin,
+	Building2,
+	MapPin,
+	Award,
+	Mail,
+} from 'lucide';
 
 createIcons({
 	icons: {
@@ -7,5 +15,6 @@ createIcons({
 		Building2,
 		MapPin,
 		Award,
+		Mail,
 	},
 });
