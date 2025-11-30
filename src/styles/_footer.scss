@@ -48,6 +48,11 @@
 		color: $color-text-secondary;
 		font-size: 0.84rem;
 		font-weight: 400;
+		order: 3;
+
+		@media (min-width: $breakpoint-xl) {
+			order: 2;
+		}
 	}
 
 	&__contact {
@@ -56,6 +61,11 @@
 		gap: 1rem;
 		font-size: 0.84rem;
 		font-weight: 400;
+		order: 2;
+
+		@media (min-width: $breakpoint-xl) {
+			order: 3;
+		}
 
 		a {
 			color: $color-text-secondary;
