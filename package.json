@@ -24,7 +24,8 @@
     "stylelint-prettier": "^5.0.3",
     "terser": "^5.44.1",
     "typescript": "^5.9.3",
-    "vite": "^7.2.4"
+    "vite": "^7.2.4",
+    "vite-plugin-html": "^3.2.2"
   },
   "dependencies": {
     "lucide": "^0.555.0"
