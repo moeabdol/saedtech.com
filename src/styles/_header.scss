@@ -121,9 +121,5 @@
 				color: $color-primary;
 			}
 		}
-
-		@media (min-width: $breakpoint-md) {
-			display: none;
-		}
 	}
 }
