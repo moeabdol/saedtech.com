@@ -51,7 +51,7 @@
 	}
 
 	&__socials {
-		display: flex;
+		display: flex !important;
 		align-items: center;
 		gap: 1rem;
 		font-size: 0.84rem;

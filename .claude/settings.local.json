@@ -2,7 +2,9 @@
   "permissions": {
     "allow": [
       "Bash(cat:*)",
-      "Bash(tr:*)"
+      "Bash(tr:*)",
+      "WebFetch(domain:saedtech.com)",
+      "Bash(curl:*)"
     ],
     "deny": [],
     "ask": []
